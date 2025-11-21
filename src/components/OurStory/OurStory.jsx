@@ -22,7 +22,7 @@ const OurStory = () => {
               builds connection, and can be enjoyed{" "}
               <span className="highlight">anywhere</span>. After months of
               testing, design improvements, and player feedback, Golfbasket
-              Hoops became more than just a game — it’s a whole new way to play.
+              Hoops became more than just a game — It’s a whole new way to play.
               With its compact, <span className="highlight">portable</span>{" "}
               design, it’s perfect for indoor or outdoor fun.
             </p>
