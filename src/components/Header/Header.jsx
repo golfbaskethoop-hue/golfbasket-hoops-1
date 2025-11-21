@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 import logo from "../../assets/logo.svg";
-import cart from "../../assets/cart.svg";
+import envlope from "../../assets/envlope.svg";
+
+
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -54,10 +56,14 @@ const Header = () => {
         </nav>
 
         <div className="header-right">
-          <button className="order-btn">
-            <img src={cart} alt="cart" className="cart-icon" />
-            Order Now
-          </button>
+         <button
+  className="order-btn"
+  onClick={() => window.location.href = "mailto:info@golfbasketsplay.com"}
+>
+  <img src={envlope} alt="envelope" className="cart-icon" />
+  Mail us
+</button>
+
         </div>
 
         {/* Hamburger */}
@@ -115,10 +121,17 @@ const Header = () => {
         <a href="#get-in-touch" onClick={() => setMenuOpen(false)}>Contact</a>
 
 
-        <button className="order-btn" onClick={() => setMenuOpen(false)}>
-          <img src={cart} alt="cart" className="cart-icon" />
-          Order Now
-        </button>
+        <button
+  className="order-btn"
+  onClick={() => {
+    setMenuOpen(false);
+    window.location.href = "mailto:info@golfbasketsplay.com";
+  }}
+>
+  <img src={envlope} alt="envelope" className="cart-icon" />
+  Order Now
+</button>
+
       </nav>
     </>
   );

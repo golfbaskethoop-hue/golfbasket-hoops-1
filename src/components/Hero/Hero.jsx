@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import heroBg from "../../assets/hero-bg.png";
-import cart from "../../assets/cart.svg";
+import phone from "../../assets/phone.svg";
 
 const Hero = () => {
   return (
@@ -20,10 +20,12 @@ const Hero = () => {
           <br />
           Play it. Love it. Own it.
         </p>
-        <button className="cta">
-          <img src={cart} alt="cart icon" className="cart-icon" />
-          Get More detail
-        </button>
+        <button className="cta"
+  onClick={() => window.location.href = "tel:+13477599127"}>
+   <img src={phone} alt="cart icon" className="cart-icon" />
+    +1 347 759-9127
+</button>
+
       </div>
     </section>
   );
